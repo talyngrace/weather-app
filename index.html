@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles.css">
-    <title>Weather App</title>
+  <title>Weather App</title>
 </head>
 
-<header class="header">Weather Dashbord</header>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Weather App</span>
+</nav>
 
 <body>
 
-    <aside>
-        <div class="input">input</div>
-        
-    </aside>
-    
+  <!-- main container  -->
+  <main class="container-fluid">
+
+    <!-- aside search section -->
+
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-success">Header</div>
+        <div class="card-body text-success">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              City
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">City</a>
+            <a href="#" class="list-group-item list-group-item-action">City</a>
+            <a href="#" class="list-group-item list-group-item-action">City</a>
+            <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">City</a>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-success">Footer</div>
+      </div>
+
+      <!-- weather section  -->
+      <div id="weather-section" class="col-lg-9 col-md-12 col-sm-12">
+        <div id="city">
+          <p>City</p>
+        </div>
+      </div>
+  </main>
+
+
 </body>
-<footer><p>Made by <a href="https://github.com/talyngrace/">Talyn Demi</a></p></footer>
+<div class="card-footer text-muted">
+ 
+</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./assets/script.js"></script>
+
 </html>
